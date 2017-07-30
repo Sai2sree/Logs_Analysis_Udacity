@@ -34,3 +34,26 @@ This project is a python program that uses psycopg2 module to connect to a datab
 2. Once you got the shell prompt back, run the command ``vagrant ssh`` to log in to the Linux VM.
 3. To load the data, use the command ``psql -d news -f newsdata.sql``.
 4. To execute the program, run the command ``python Logs_Analysis.py`` from the command line.
+
+## Output
+```
+• The most popular articles of all time are:
+
+ * Candidate is jerk, alleges rival - 342102 views
+ * Bears love berries, alleges bear - 256365 views
+ * Bad things gone, say good people - 171762 views
+
+
+• The most popular article authors of all time are:
+
+ * Ursula La Multa - 512805 views
+ * Rudolf von Treppenwitz - 427781 views
+ * Anonymous Contributor - 171762 views
+ * Markoff Chaney - 85387 views
+
+
+• More than 1% of requests lead to errors on:
+
+ * July 17, 2016 - 2.26 % errors
+
+```
