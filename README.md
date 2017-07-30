@@ -18,14 +18,14 @@ This project is a python program that uses psycopg2 module to connect to a datab
 ## Instructions to run the code
 
 ### You will need:
-* Python3
-* Vagrant
-* VirtualBox
+* [Python3](https://www.python.org/downloads/)
+* [Vagrant](https://www.vagrantup.com/)
+* [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 * 'newsdata.sql' file provided by Udacity.
 
 ### Setup
 
-* Install Python3, Vagrant, and VirtualBox.
+* Install [Python3](https://www.python.org/downloads/), [Vagrant](https://www.vagrantup.com/), and [VirtualBox](https://www.virtualbox.org/wiki/Downloads).
 * Clone this repository.
 
 ### To Run
