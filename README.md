@@ -29,12 +29,11 @@ This project is a python program that uses psycopg2 module to connect to a datab
 * Clone this repository.
 
 ### To Run
-
-1. From your terminal, inside the vagrant subdirectory, run the command ``vagrant up``.
-2. Once you got the shell prompt back, run the command ``vagrant ssh`` to log in to the Linux VM.
-3. Navigate to the directory containing 'newsdata.sql'.
-3. Use the command ``psql -d news -f newsdata.sql`` to load the data.
-4. To execute the program, run the command ``python Logs_Analysis.py``.
+1. Create a directory with [Vagrantfile](https://github.com/udacity/fullstack-nanodegree-vm/blob/master/vagrant/Vagrantfile), and [newsdata.sql](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) files in it and navigate to it. 
+2. From your terminal, run the command ``vagrant up``. 
+3. Once you got the shell prompt back, run the command ``vagrant ssh`` to log in to the Linux VM.
+5. Use the command ``psql -d news -f newsdata.sql`` to load the data.
+6. To execute the program, run the command ``python Logs_Analysis.py``.
 
 ## Output
 ```
