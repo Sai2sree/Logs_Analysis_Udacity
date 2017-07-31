@@ -21,7 +21,7 @@ This project is a python program that uses psycopg2 module to connect to a datab
 * [Python3](https://www.python.org/downloads/)
 * [Vagrant](https://www.vagrantup.com/)
 * [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
-* 'newsdata.sql' file provided by Udacity.
+* [newsdata.sql](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip) file provided by Udacity.
 
 ### Setup
 
@@ -32,24 +32,25 @@ This project is a python program that uses psycopg2 module to connect to a datab
 
 1. From your terminal, inside the vagrant subdirectory, run the command ``vagrant up``.
 2. Once you got the shell prompt back, run the command ``vagrant ssh`` to log in to the Linux VM.
-3. To load the data, use the command ``psql -d news -f newsdata.sql``.
-4. To execute the program, run the command ``python Logs_Analysis.py`` from the command line.
+3. Navigate to the directory containing 'newsdata.sql'.
+3. Use the command ``psql -d news -f newsdata.sql`` to load the data.
+4. To execute the program, run the command ``python Logs_Analysis.py``.
 
 ## Output
 ```
 • The most popular articles of all time are:
 
- * Candidate is jerk, alleges rival - 342102 views
- * Bears love berries, alleges bear - 256365 views
- * Bad things gone, say good people - 171762 views
+ * Candidate is jerk, alleges rival - 338647 views
+ * Bears love berries, alleges bear - 253801 views
+ * Bad things gone, say good people - 170098 views
 
 
 • The most popular article authors of all time are:
 
- * Ursula La Multa - 512805 views
- * Rudolf von Treppenwitz - 427781 views
- * Anonymous Contributor - 171762 views
- * Markoff Chaney - 85387 views
+ * Ursula La Multa - 507594 views
+ * Rudolf von Treppenwitz - 423457 views
+ * Anonymous Contributor - 170098 views
+ * Markoff Chaney - 84557 views
 
 
 • More than 1% of requests lead to errors on:
