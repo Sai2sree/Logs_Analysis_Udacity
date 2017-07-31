@@ -31,13 +31,13 @@ def question1():
     query = """SELECT articles.title,
             COUNT(*) as view
             FROM articles JOIN log
-            ON log.path LIKE '%' ||articles.slug
+            ON log.path = '/article/' || articles.slug
             GROUP BY articles.title ORDER BY view DESC limit 3;"""
     articles = execute_query(query)
     print("\nThe most popular articles of all time are:\n")
     for title, views in articles:
         # Prints the most popular three articles of all time.
-        print(("{} - {} views\n\n").format(title, views))
+        print(("{} - {} views\n").format(title, views))
 
 
 def question2():
@@ -45,13 +45,13 @@ def question2():
     query = """SELECT authors.name, COUNT(*) as view
             FROM authors JOIN articles
             ON authors.id = articles.author
-            JOIN log ON log.path LIKE '%' ||articles.slug
+            JOIN log ON log.path = '/article/' || articles.slug
             GROUP BY authors.name ORDER BY view DESC;"""
     authors = execute_query(query)
     print("\nThe most popular article authors of all time are:\n")
     for author_name, views in authors:
         # Prints the most popular article authors of all time.
-        print(("{} - {} views\n\n").format(author_name, views))
+        print(("{} - {} views\n").format(author_name, views))
 
 
 def question3():
